@@ -1,0 +1,45 @@
+version: '3.9'
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: dealer_postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${DB_NAME:-dealer_db}
+      POSTGRES_USER: ${DB_USER:-dealer_app}
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-dealer_dev_2025}
+      POSTGRES_INITDB_ARGS: "--encoding=UTF8 --locale=C"
+      TZ: Asia/Jakarta
+      PGTZ: Asia/Jakarta
+    ports:
+      - "${DB_PORT:-5432}:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    command: >
+      postgres
+        -c max_connections=200
+        -c shared_buffers=256MB
+        -c effective_cache_size=768MB
+        -c maintenance_work_mem=64MB
+        -c checkpoint_completion_target=0.9
+        -c wal_buffers=16MB
+        -c default_statistics_target=100
+        -c log_min_duration_statement=1000
+        -c log_statement=ddl
+        -c log_timezone=Asia/Jakarta
+        -c timezone=Asia/Jakarta
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${DB_USER:-dealer_app} -d ${DB_NAME:-dealer_db}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+
+volumes:
+  postgres_data:
+    driver: local
+
+networks:
+  default:
+    name: dealer_network

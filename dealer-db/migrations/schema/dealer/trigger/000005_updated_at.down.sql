@@ -1,0 +1,17 @@
+DROP TRIGGER IF EXISTS trg_service_bookings_updated_at    ON dealer.service_bookings;
+DROP TRIGGER IF EXISTS trg_portal_accounts_updated_at     ON dealer.customer_portal_accounts;
+DROP TRIGGER IF EXISTS trg_order_tracking_updated_at      ON dealer.order_tracking;
+DROP TRIGGER IF EXISTS trg_sales_targets_updated_at       ON dealer.sales_targets;
+DROP TRIGGER IF EXISTS trg_employees_updated_at           ON dealer.employees;
+DROP TRIGGER IF EXISTS trg_work_orders_updated_at         ON dealer.work_orders;
+DROP TRIGGER IF EXISTS trg_part_stocks_updated_at         ON dealer.part_stocks;
+DROP TRIGGER IF EXISTS trg_spare_parts_updated_at         ON dealer.spare_parts;
+DROP TRIGGER IF EXISTS trg_commission_ledger_updated_at   ON dealer.commission_ledger;
+DROP TRIGGER IF EXISTS trg_invoices_updated_at            ON dealer.invoices;
+DROP TRIGGER IF EXISTS trg_financing_updated_at           ON dealer.financing_applications;
+DROP TRIGGER IF EXISTS trg_serah_terima_updated_at        ON dealer.serah_terima;
+DROP TRIGGER IF EXISTS trg_spk_updated_at                 ON dealer.spk;
+DROP TRIGGER IF EXISTS trg_prospects_updated_at           ON dealer.prospects;
+DROP TRIGGER IF EXISTS trg_customers_updated_at           ON dealer.customers;
+DROP TRIGGER IF EXISTS trg_vehicle_units_updated_at       ON dealer.vehicle_units;
+DROP TRIGGER IF EXISTS trg_vehicle_models_updated_at      ON dealer.vehicle_models;

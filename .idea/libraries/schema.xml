@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="schema">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/dealer-db/.idea/dataSources/f98568da-692a-4994-9860-c108357935f2/storage_v2/_src_/database/dealer_db.ZHDerw/schema/public.abK9xQ.zip!/" />
+      <root url="jar://$PROJECT_DIR$/dealer-db/.idea/dataSources/f98568da-692a-4994-9860-c108357935f2/storage_v2/_src_/database/dealer_db.ZHDerw/schema/dealer.GZ5hsA.zip!/" />
+      <root url="jar://$PROJECT_DIR$/dealer-db/.idea/dataSources/f98568da-692a-4994-9860-c108357935f2/storage_v2/_src_/database/dealer_db.ZHDerw/schema/auth.qN0tAA.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

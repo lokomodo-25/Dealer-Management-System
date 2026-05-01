@@ -1,0 +1,9 @@
+DROP TABLE IF EXISTS dealer.service_reminders;
+DROP TABLE IF EXISTS dealer.customer_feedback;
+DROP TABLE IF EXISTS dealer.customer_notifications;
+DROP TABLE IF EXISTS dealer.notification_templates;
+DROP TABLE IF EXISTS dealer.tracking_document_links;
+DROP TABLE IF EXISTS dealer.po_indent_tracking;
+DROP TABLE IF EXISTS dealer.tracking_stage_logs;
+DROP TABLE IF EXISTS dealer.order_tracking;
+DROP TABLE IF EXISTS dealer.customer_portal_accounts;

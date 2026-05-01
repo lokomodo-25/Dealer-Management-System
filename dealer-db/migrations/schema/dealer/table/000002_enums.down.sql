@@ -1,0 +1,12 @@
+DROP TYPE IF EXISTS dealer.tracking_type_enum;
+DROP TYPE IF EXISTS dealer.notification_status_enum;
+DROP TYPE IF EXISTS dealer.notification_channel_enum;
+DROP TYPE IF EXISTS dealer.stock_movement_type_enum;
+DROP TYPE IF EXISTS dealer.activity_type_enum;
+DROP TYPE IF EXISTS dealer.prospect_stage_enum;
+DROP TYPE IF EXISTS dealer.payment_method_enum;
+DROP TYPE IF EXISTS dealer.financing_status_enum;
+DROP TYPE IF EXISTS dealer.tracking_stage_enum;
+DROP TYPE IF EXISTS dealer.wo_status_enum;
+DROP TYPE IF EXISTS dealer.spk_status_enum;
+DROP TYPE IF EXISTS dealer.unit_status_enum;

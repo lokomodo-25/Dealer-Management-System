@@ -1,0 +1,7 @@
+BEGIN;
+DELETE FROM dealer.notification_templates WHERE tenant_id = '11111111-0000-0000-0000-000000000001';
+DELETE FROM dealer.commission_rules WHERE tenant_id = '11111111-0000-0000-0000-000000000001';
+DELETE FROM dealer.part_stocks WHERE tenant_id = '11111111-0000-0000-0000-000000000001';
+DELETE FROM dealer.spare_parts WHERE tenant_id = '11111111-0000-0000-0000-000000000001';
+DELETE FROM dealer.vehicle_models WHERE tenant_id = '11111111-0000-0000-0000-000000000001';
+COMMIT;
