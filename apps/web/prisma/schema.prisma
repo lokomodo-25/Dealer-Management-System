@@ -1,0 +1,26 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model doc_sequences {
+  seq_key    String   @id
+  tenant_id  String   @db.Uuid
+  last_seq   Int      @default(0)
+  updated_at DateTime @default(now()) @db.Timestamptz(6)
+
+  @@index([tenant_id], map: "idx_doc_sequences_tenant")
+}
+
+model schema_migrations_function {
+  version BigInt  @id
+  dirty   Boolean
+}
+
+model schema_migrations_table {
+  version BigInt  @id
+  dirty   Boolean
+}
